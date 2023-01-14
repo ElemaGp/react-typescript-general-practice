@@ -3,7 +3,7 @@ import "./button.css"
 
 type buttonProp = {
     color: string,
-    width: number,
+    width?: number,
     text: string
 }
 

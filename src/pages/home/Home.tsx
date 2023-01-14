@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <div>
-      <Button color='my color is green' width={50} text="this is the text"/>
+      <Button color='my color is green'  text="this is the text"/>
     </div>
   )
 }
