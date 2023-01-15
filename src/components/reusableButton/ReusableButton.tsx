@@ -2,18 +2,18 @@ import "./reusableButton.css"
 import React from 'react'
 
 type ReusableButtonProps = {
+    backgroundColor: string,
     color: string,
-    width: string,
-    height?: string,
+    padding: string,
+    borderRadius?: string,
     children: string | number
-
 }
 
-const ReusableButton = ({color, width, height, children} : ReusableButtonProps) => {
+const ReusableButton = ({backgroundColor, color, padding, borderRadius, children} : ReusableButtonProps) => {
   return (
-    <div style={{color: color, width: width, height: height}}>  {/* inline styling, passing in the props */}
+    <span style={{backgroundColor: backgroundColor, color: color, padding: padding, borderRadius: borderRadius, cursor: "pointer"}}>  {/* inline styling, passing in the props */}
       {children}
-    </div>
+    </span>
   )
 }
 

@@ -1,6 +1,7 @@
 import './employees.css'
 import React from 'react'
 import { EmployeesList } from '../../EmployeesList'
+import ReusableButton from '../../components/reusableButton/ReusableButton'
 
 const Employees = () => {
   return (
@@ -16,6 +17,8 @@ const Employees = () => {
             )
         })
         }
+
+        <ReusableButton backgroundColor='teal' color="white" padding='1rem' borderRadius='6px' children="Sign up"/>
     </div>
   )
 }
