@@ -11,9 +11,9 @@ type ReusableButtonProps = {
 
 const ReusableButton = ({backgroundColor, color, padding, borderRadius, children} : ReusableButtonProps) => {
   return (
-    <span style={{backgroundColor: backgroundColor, color: color, padding: padding, borderRadius: borderRadius, cursor: "pointer"}}>  {/* inline styling, passing in the props */}
+    <div style={{backgroundColor: backgroundColor, color: color, padding: padding, borderRadius: borderRadius, cursor: "pointer", display: "inline-block"}}>  {/* inline styling, passing in the props */}
       {children}
-    </span>
+    </div>
   )
 }
 
